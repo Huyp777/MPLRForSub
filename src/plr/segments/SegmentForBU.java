@@ -1,25 +1,25 @@
-package plr.idp;
+package plr.segments;
 
-public class Segments {
+public class SegmentForBU {
 	private int begin;
 	private int end;
-	private double mergeCost;
+	private double mergeCost; // the merge cost for two adjacent segments
 	private int isFirst;
 	private int indexloc;
-	public Segments() {
+	public SegmentForBU() {
 		super();
 		this.mergeCost = Double.MAX_VALUE;
 		this.isFirst = 0;
 		this.indexloc = 0;
 	}
-	public Segments(int begin, int end, double mergecost) {
+	public SegmentForBU(int begin, int end, double mergecost) {
 		super();
 		this.begin = begin;
 		this.end = end;
 		this.indexloc = 0;
 		this.mergeCost = mergecost;
 	}
-	public Segments(int begin, int end) {
+	public SegmentForBU(int begin, int end) {
 		super();
 		this.begin = begin;
 		this.end = end;
@@ -27,7 +27,7 @@ public class Segments {
 		this.isFirst = 1;
 		this.indexloc = 0;
 	}
-	public Segments(int begin, int end,int spit) {
+	public SegmentForBU(int begin, int end,int spit) {
 		super();
 		this.begin = begin;
 		this.end = end;
